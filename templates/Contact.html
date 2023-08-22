@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Disease Prediction - Hospital Recommendation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c587fc1763.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    .jumbotron {
+        background: url(bg.png) fixed center no-repeat;
+        background-size: cover;
+    }
+    
+    a,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: goldenrod;
+    }
+    
+    @media only screen and (min-width: 320px) and (max-width:500px) {
+        .main {
+            margin-top: 20px;
+        }
+        .main:first-child {
+            margin-top: -5%;
+        }
+        .conter {
+            margin-bottom: -12%;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hospital</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('Homepage') }}">Home <span
+                            class=" sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('About') }}">About Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('Contact') }}">Hospital Recommendation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+     <!--   <img src="/static/contact2.jpg" class="img-responsive mx-auto d-block mb-6" alt="Responsive image" style="
+        max-width: 40%;  
+        max-height: 0.3%
+        ; ">   -->
+        <div class="container ">
+            <form action="/contact" method="POST">
+                <div class=" text-center">
+                    <h1 style="letter-spacing: 1px;word-spacing: 2px; ">Hospital Recommendation</h1>
+                </div>
+			    <br>
+	<!--			<div class="form-group">
+        <label class="font-weight-bold">Select Disease</label>
+        <select class="form-control custom-select" id="alcohol" name="alcohol" required>
+            <option value="">Select Disease</option>
+            <option value="">Heart Disease</option>
+            <option value="">Chronic Kidney Disease</option>
+			<option value="">Corono Virus</option>
+			<option value="">Malaria</option>
+			<option value="">Pneumonia</option> 
+			<option value="">Dengue</option>
+		    <option value="">Liver Disease</option>	
+			<option value="">Skin Disease</option>
+			<option value="">Cancer</option>
+		    <option value="">Fever</option>
+        </select>
+    </div>   -->
+    <br>
+	
+	
+<!-- <button type="submit " class="btn btn-primary mx-auto d-block btn-lg ">Submit</button>  -->
+                    <br>
+            </form>
+        </div> 
+		<br>
+		<div class="form-actions">
+            <a href="https://www.medifee.com/list/best-cardiology-hospitals-in-chennai"><center><button type="submit" class="btn btn-primary btn-lg mx-auto"
+                    type="submit">Heart Disease
+              </button></center></a>
+			  <br>
+			<a href="https://www.vaidam.com/hospitals/chronic-kidney-disease/india/chennai"><center><button type="submit" class="btn btn-primary btn-lg mx-auto"
+                    type="submit">Chronic Kidney Disease
+              </button></center></a>
+			  <br>
+			<a href="https://spiritofchennai.com/healthcare/private-hospitals-covid-19-treatment-chennai/"><center><button type="submit" class="btn btn-primary btn-lg mx-auto"
+                    type="submit">Corona Virus 
+              </button></center></a>
+			  <br>
+			<a href="https://www.credihealth.com/hospitals/chennai/malaria"><center><button type="submit" class="btn btn-primary btn-lg mx-auto"
+                    type="submit">Malaria
+              </button></center></a>
+			  <br>
+			<a href="https://www.medifee.com/list/best-pulmonology-hospitals-in-chennai"><center><button type="submit" class="btn btn-primary btn-lg mx-auto"
+                    type="submit">Pneumonia
+              </button></center></a>
+			  <br>
+		    <a href="https://www.google.com/search?tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=APq-WBsQuYrqeUDD5e1jaxTuSyQPZttHdg:1644488447456&q=Omigron+speciality+hospital+list+in+chennai&rflfq=1&num=10&sa=X&ved=2ahUKEwjgkP3t9PT1AhUuzDgGHcgNBCkQjGp6BAgEEAE&biw=1600&bih=700&dpr=1#rlfi=hd:;si:;mv:[[13.1518956,80.30010759999999],[12.8637924,80.1176471]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2"><center><button type="submit" class="btn btn-primary btn-lg mx-auto"
+                    type="submit">Omikron
+              </button></center></a>
+			  <br>
+        </div>
+        
+
+
+            
+            <br>
+            <br>
+        </div>
+        </form>
+
+</body>
+
+</html>
